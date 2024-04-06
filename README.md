@@ -1,4 +1,4 @@
-#### Inspired from (https://github.com/imartinez/privateGPT) and (https://github.com/jmorganca/ollama)
+#### Fine Tuned LLM specifically for Indian Law
 
 #### Step 1: Step a Virtual Environment
 
@@ -36,12 +36,17 @@ Ingestion complete! You can now run privateGPT.py to query your documents
 
 #### Step 6: Run this command (use python3 if on mac)
 ```
-python privateGPT.py
+python privateGPT_api.py
 ```
 
-##### Play with your docs
-Enter a query: How many locations does WeWork have?
+#### Choose "POST" as the request type and enter the URL of your API endpoint. Since you're running it locally, the URL will be http://127.0.0.1:5000/query 
 
+#### Set request body: Select the "Body" tab, choose "raw", and select "JSON" from the dropdown. Then, enter your query JSON data. For example:
+```
+{
+    "query": "Your query text here"
+}
+```
 
 ### Try with a different model:
 ```
